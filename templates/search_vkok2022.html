@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>FaceHunt: форма поиска по аватаркам вконтакте и одноклассники 2022</title>
+    <meta content="поисковая система распознавания лиц, инструмент обратного поиска изображений и механизм поиска фотографий, используемый для определения того, где ваше лицо появляется в сети." name="description">
+    <meta content="поисковая система,распознование фотографий" name="keywords">
+    {% include 'head_includes.html' %}
+</head>
+<body>
+    {% include 'header.html' %}
+    <main id="main">
+        <section id="search-services-vkok2022" class="search-services search">
+            <div class="container">
+                <div class="back_button mb-4">
+                    <a href="{{ url_for('search') }}">← назад к выбору базы данных</a>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                        <div class="section-header">
+                            <h3>ПОИСК: форма поиска по аватаркам Контакта и Одноклассников 2022</h3>
+                        </div>
+                        <div class="adfinity_block_4725"></div>
+                        <div class="adfinity_block_4723"></div>
+                        <form class="php-search-form mt-2">
+                            <input type="hidden" id="query" name="query" value="vkokn_avatar">
+                            <fieldset id="search-fields">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div id="slider-container">
+                                            <div><img id="face-preview" class="img-thumbnail d-block" style="display: block; margin-left: auto; margin-right: auto;" src="../static/img/user-placeholder.jpg" alt="placeholder"></div>
+                                        </div>
+                                        <div class="slick-nav-wrap"><div class="slick-nav"></div></div>
+                                    </div>
+                                    <div class="col-lg-8 mt-3">
+                                        <p class="ms-2">
+                                            Всего лиц в базе: <strong>482,703,122<span class="d-none d-sm-inline"> (просчитано 100% vk.com и 100% ok.ru)</span></strong><br>
+                                            Время сбора: <strong><span class="d-none d-sm-inline">vk.com: </span>с 01-2022<span class="d-none d-sm-inline"> по 05-2022, ok.ru: с 01-2022</span> по 05-2022</strong>.<br>
+                                            Процент успешных поисков: <strong><span class="d-none d-sm-inline">vk.com: </span>45.77%,<span class="d-none d-sm-inline"> ok.ru:</span> 47.82%</strong>.<br>
+                                            Источник: <strong>VK + OK аватарки 2022</strong><a href="{{ url_for('search') }}" style="margin-left: 10px">изменить</a>
+                                        </p>
+                                        <div class="d-inline-block ms-2">
+                                            <div class="d-inline-block">
+                                                <label for="results">Вывести результатов</label>
+                                            </div>
+                                            <select id="results" class="selectpicker form-control-sm w-auto p2">
+                                                <option value="50" selected>50</option>
+                                                <option value="100">100</option>
+                                                <option value="150">150</option>
+                                                <option value="200">200</option>
+                                                <option value="300">300</option>
+                                                <option value="500">500</option>
+                                            </select>
+                                        </div>
+                                        <div class="mt-4 ms-2">
+                                            <button id="upload-button" type="button" class="process-buttons me-3 uppload-button">Загрузить</button><button id="search-button" type="button" class="process-buttons ml-3 disabled" disabled>Найти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <h2 id="results-title1" class="results-title my-4 text-center text-lg-left"></h2>
+                        <div id="search-results1" class="search-results row text-center text-lg-left"></div>
+                        <h2 id="results-title2" class="results-title my-4 text-center text-lg-left"></h2>
+                        <div id="search-results2" class="search-results row text-center text-lg-left"></div>
+                        <h2 id="results-title3" class="results-title my-4 text-center text-lg-left"></h2>
+                        <div id="search-results3" class="search-results row text-center text-lg-left"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include 'footer.html' %}
+    {% include 'modals.html' %}
+    {% include 'foot_includes.html' %}
+</body>
+</html>

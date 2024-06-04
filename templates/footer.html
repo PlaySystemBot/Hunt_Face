@@ -1,0 +1,59 @@
+<footer id="footer" class="footer">
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-info">
+                        <h3>FaceHunt:RU</h3>
+                        <p>
+                            <strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4330262231202b77252220263003242e222a2f6d202c2e">[email&#160;protected]</a><br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Главное меню</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ url_for('search') }}">Поиск</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ url_for('about') }}">О нас</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ url_for('faq') }}">FAQ</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ url_for('contact') }}">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Доступные базы</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ url_for('search_public') }}">Публичные персоны</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ url_for('search_vkwall') }}">Фотографии профиля VK</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ url_for('search_vkok2022') }}">Аватарки VK2022 и OK2022</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ url_for('search_clubhouse') }}">Аватарки Клубхауса</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ url_for('search_tiktok') }}">Аватарки Тиктока</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ url_for('search_vkok') }}">Аватарки VK2020 и OK2020</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-newsletter">
+                    <h4>Подписаться на новости</h4>
+                    <p>Введите свой электронный адрес в поле ниже и нажмите кнопку «Подписаться».</p>
+                    <form action="/subscribe" id="subsFrm" method="post" class="php-email-form">
+                        <input type="email" id="subscribeEmail" autocomplete="on">
+                        <input type="submit" id="subscribeBtn" value="Подписаться">
+                    </form>
+                    <div id="subscribeStatusOk" class="status sent-message"></div>
+                    <div id="subscribeStatusError" class="status error-message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-legal text-center">
+        <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+            <div class="d-flex flex-column align-items-center align-items-lg-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>FaceHunt.com</span></strong>.
+                </div>
+            </div>
+            <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://yastatic.net/share2/share.js"></script>
+            <div class="ya-share2" data-curtain data-services="messenger,vkontakte,odnoklassniki,telegram,twitter,viber,whatsapp,skype"></div>
+        </div>
+    </div>
+</footer>
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<div id="preloader"></div>

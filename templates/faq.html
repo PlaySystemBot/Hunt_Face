@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>FaceHunt: часто задаваемые вопросы</title>
+    <meta content="поисковая система распознавания лиц, инструмент обратного поиска изображений и механизм поиска фотографий, используемый для определения того, где ваше лицо появляется в сети." name="description">
+    <meta content="поисковая система,распознование фотографий" name="keywords">
+    {% include 'head_includes.html' %}
+</head>
+<body>
+    {% include 'header.html' %}
+    <main id="main">
+        <section id="faq-services" class="faq-services faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Часто задаваемые <strong>вопросы</strong></h2>
+                    <p>
+                        Ознакомьтесь с уже существующими часто задаваемыми вопросами и ответами на них. Если вы не нашли среди них ответа на ваш вопрос, то можете связаться с нами по <a href="{{ url_for('contact') }}">электронной почте</a>.
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="accordion accordion-flush px-xl-5" id="faqlist">
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Как работает FaceHunt и как его можно использовать?
+                                </button>
+                            </h3>
+                            <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    FaceHunt – это современная поисковая система для распознавания лиц, которая позволяет пользователям выполнять поиск по изображениям. Её можно использовать для выявления случаев, когда изображение пользователя было размещено в сети без его согласия. Эта информация имеет решающее значение для снижения риска мошеннических действий, включая кражу личных данных, фишинг и другие виды мошенничества. FaceHunt предcтавляет ценность для частных лиц и организаций, стремящихся защитить свою конфиденциальность и репутацию в Интернете. FaceHunt позволяет пользователям отслеживать свой цифровой след и принимать упреждающие меры, отправляя запросы на удаление для защиты своей конфиденциальности и безопасности.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Могу ли я искать других людей с помощью FaceHunt?
+                                </button>
+                            </h3>
+                            <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    FaceHunt предназначен прежде всего для личного использования. Мы не рекомендуем использовать любой поиск, относящийся к другим лицам. Также мы принимаем все необходимые меры для обеспечения конфиденциальности и защиты наших пользователей.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Что происходит с изображениями, которые я загрузил в FaceHunt?
+                                </button>
+                            </h3>
+                            <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Любые изображения, отправленные вами в FaceHunt, временно сохраняются в течение не более чем 72 часов.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Гарантированно ли я найду действительно похожее лицо в результатах поиска?
+                                </button>
+                            </h3>
+                            <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Мы очень много работаем, чтобы предоставить вам качественные результаты, однако возможно, что вы не найдете действительно похожих лиц в результатах. Если вы не удовлетворены результатами, попробуйте выполнить новый поиск, используя другие предлагаемые базы. Также вы можете попробовать использовать несколько разных изображений одного и того же человека.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Ищет ли FaceHunt по видео?
+                                </button>
+                            </h3>
+                            <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Нет, мы не ищем лица в видео. Мы также не ищем лица в превью к видео.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="700">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Я не хочу, чтобы моё лицо находилось в FaceHunt. Что я могу сделать?
+                                </button>
+                            </h3>
+                            <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Чтобы запросить удаление своих изображений из поисковой выдачи, вы можете написать нам на email указанный на <a href="{{ url_for('contact') }}">странице с контактами</a>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="800">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-7">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Могу ли я удалить одно конкретное изображение из результатов поиска?
+                                </button>
+                            </h3>
+                            <div id="faq-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Да и это бесплатно. <a href="{{ url_for('contact') }}">Напишите нам</a> email, в котором укажите ссылку на изображение, а также краткое описание, почему вы хотите удалить изображение.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="900">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-8">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Каким техническим требованиям должна соответствовать загружаемая фотография?
+                                </button>
+                            </h3>
+                            <div id="faq-content-8" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Загружаемое изображение должно соответствовать следующим техническим требованиям: формат файла — JPG, PNG; размер изображения – не более 4,5 МБ.; положение лица — анфас; размер лица — минимум 128*128 пикселей (это значение не зависит от размера изображения).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="1000">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-9">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    На каком языке я могу связаться с командой FaceHunt?
+                                </button>
+                            </h3>
+                            <div id="faq-content-9" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    К сожалению, в настоящее время мы предлагаем поддержку только на русском и английском языках.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="1100">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-10">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Я заполнил специальную форму для удаления моих изображений, но некоторые изображения по-прежнему отображаются в поиске.
+                                </button>
+                            </h3>
+                            <div id="faq-content-10" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Возможно, вы не указали всей необходимой для удаления информации, а мы, в свою очередь, не смогли связаться с вами через email, указанный вами для обратной связи. Напишите нам на email указанный на <a href="{{ url_for('contact') }}">странице с контактами</a>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="1200">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-11">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Сколько времени требуется службе поддержки, чтобы ответить на мое сообщение?
+                                </button>
+                            </h3>
+                            <div id="faq-content-11" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Как правило, поддержка отвечает на сообщения в течение 24 часов.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include 'footer.html' %}
+    {% include 'modals.html' %}
+    {% include 'foot_includes.html' %}
+</body>
+</html>

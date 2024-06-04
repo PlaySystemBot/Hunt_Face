@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>FaceHunt: связаться с нами</title>
+    <meta content="поисковая система распознавания лиц, инструмент обратного поиска изображений и механизм поиска фотографий, используемый для определения того, где ваше лицо появляется в сети." name="description">
+    <meta content="поисковая система,распознование фотографий" name="keywords">
+    {% include 'head_includes.html' %}
+</head>
+<body>
+    {% include 'header.html' %}
+    <main id="main">
+        <section id="contact-services" class="contact-services">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                        <div class="section-header">
+                            <h2>Связаться с нами</h2>
+                        </div>
+                        <p>Перед тем, как связаться с нами, рекомендуем перейти в раздел <a href="{{ url_for('faq') }}">Часто задаваемых вопросов</a> и попытаться найти ответ на ваш вопрос там.</p>
+                        <p>В случае, если ответ найти не удалось, вы можете написать нам письмо с подробным описанием проблемы или по любому возникшему вопросу. Мы с вами свяжемся в течении 24 часов - <i class="bi bi-envelope flex-shrink-0"></i> <strong><a href="/cdn-cgi/l/email-protection#c1b2a4a0b3a2a9f5a7a0a2a4b281a6aca0a8adefa2aeac"><span class="__cf_email__" data-cfemail="ea998f8b988982de8c8b898f99aa8d878b8386c4898587">[email&#160;protected]</span></a></strong>.</p>
+                        <p>Чтобы запросить удаление своих изображений из поисковой выдачи, вы можете написать нам на email указанный выше.</p>
+                        <p>Если мы не свяжемся с вами в течение 24 часов, снова напишите нам и дайте знать, что вы не получили ответа.</p>
+                    </div>
+                    <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                        <img src="../static/img/FaceHunt-contact.svg" alt class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include 'footer.html' %}
+    {% include 'modals.html' %}
+    {% include 'foot_includes.html' %}
+</body>
+</html>

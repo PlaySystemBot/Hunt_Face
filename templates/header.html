@@ -1,0 +1,23 @@
+<header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-around">
+        <a href="{{ url_for('index') }}" class="logo d-flex align-items-center me-auto me-lg-0">
+            <h1><span>FaceHunt</span></h1>
+        </a>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link {% if current_page == 'index' %}active{% endif %}" href="{{ url_for('index') }}"><span>Главная</span></a></li>
+                <li><a class="nav-link {% if current_page == 'search' %}active{% endif %}" href="{{ url_for('search') }}">Поиск</a></li>
+                <li><a class="nav-link {% if current_page == 'about' %}active{% endif %}" href="{{ url_for('about') }}">О нас</a></li>
+                <li><a class="nav-link {% if current_page == 'faq' %}active{% endif %}" href="{{ url_for('faq') }}">FAQ</a></li>
+                <li><a class="nav-link {% if current_page == 'contact' %}active{% endif %}" href="{{ url_for('contact') }}">Контакты</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle d-none"></i>
+        </nav>
+        {% if logged_in_user %}
+            <span class="navbar-text">{{ logged_in_user }}</span>
+            <a class="btn-account" href="#" id="logoutButton">Выйти</a>
+        {% else %}
+            <a class="btn-account" href="#" data-bs-toggle="modal" data-bs-target="#modalLoginForm">Войти</a>
+        {% endif %}
+    </div>
+</header>

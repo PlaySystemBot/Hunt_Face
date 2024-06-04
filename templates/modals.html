@@ -1,0 +1,75 @@
+<!-- Модальное окно входа -->
+<div id="modalLoginForm" class="modal fade">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <form id="loginFrm" action="{{ url_for('login') }}" method="post">
+                <div class="modal-header">
+                    <h4 class="modal-title">Вход</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="loginStatusError" class="login-error"></div>
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="text" id="loginEmail" name="email" class="form-control" required="required" autocomplete="on" data-autofocus="on">
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Пароль</label>
+                        <input type="password" id="loginPassword" name="password" class="form-control" required="required">
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <a class="btn-register" href="#" data-bs-toggle="modal" data-bs-target="#modalRegisterForm">Регистрация</a>
+                    <button type="submit" class="btn-login">Войти</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно регистрации -->
+<div id="modalRegisterForm" class="modal fade">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <form id="registerFrm" action="{{ url_for('register') }}" method="post">
+                <div class="modal-header">
+                    <h4 class="modal-title">Регистрация</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="registerStatusError" class="login-error"></div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" name="email" class="form-control" required="required" autocomplete="on">
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Пароль</label>
+                        <input type="password" id="registerPassword" name="password" class="form-control" required="required">
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="submit" class="btn-login">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Модальное окно -->
+    <div class="modal fade" id="modalIMG" tabindex="-1" aria-labelledby="modalIMGLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <a id="modalIMGhref" href="" target="_blank">
+                        <img id="modalIMGsrc" src="" class="img-fluid" alt="Изображение">
+                    </a>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>

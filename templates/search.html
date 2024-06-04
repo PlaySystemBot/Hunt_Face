@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>FaceHunt: поиск</title>
+    <meta content="поисковая система распознавания лиц, инструмент обратного поиска изображений и механизм поиска фотографий, используемый для определения того, где ваше лицо появляется в сети." name="description">
+    <meta content="поисковая система,распознование фотографий" name="keywords">
+    {% include 'head_includes.html' %}
+</head>
+<body>
+    {% include 'header.html' %}
+    <main id="main">
+        <section id="optout-services" class="optout-services contact">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                        <div class="section-header">
+                            <h2>ПОИСК</h2>
+                        </div>
+                        <div class="adfinity_block_4724"></div>
+                        <div class="adfinity_block_4720"></div>
+                        <section id="onfocus" class="onfocus">
+                            <div class="container-fluid p-0" data-aos="fade-up">
+                                <div class="row g-0">
+                                    <div class="col-lg-12">
+                                        <div class="content d-flex flex-column justify-content-center h-100">
+                                            <h3>Поиск по фотографиям профиля <em>Вконтакте</em></h3>
+                                            <p class="fst-italic">
+                                                Используется улучшенный алгоритм распознавания. Самая большая база с самым высоким процентом успешных поисков.
+                                            </p>
+                                            <ul>
+                                                <li><i class="bi bi-check-circle"></i> Всего лиц в базе: <strong>1,113,850,873 (просчитано 100% от всех)</strong></li>
+                                                <li><i class="bi bi-check-circle"></i> Время сбора: <strong>с 11-2019 по 11-2020, c 12-2022 по 01-2023</strong></li>
+                                                <li><i class="bi bi-check-circle"></i> Процент успешных поисков: <strong>68.79%</strong></li>
+                                            </ul>
+                                            <a href="{{ url_for('search_vkwall') }}" class="read-more align-self-start" onclick="checkRegistration(event, '{{ url_for('search_vkwall') }}')"><span>Перейти</span><i class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="onfocus" class="onfocus">
+                            <div class="container-fluid p-0" data-aos="fade-up">
+                                <div class="row g-0">
+                                    <div class="col-lg-12">
+                                        <div class="content d-flex flex-column justify-content-center h-100">
+                                            <h3>Аватарки <em>Вконтакте и Одноклассников</em> 2022</h3>
+                                            <p class="fst-italic">
+                                                Новая база 2022 и улучшенный алгоритм распознавания.
+                                            </p>
+                                            <ul>
+                                                <li><i class="bi bi-check-circle"></i> Всего лиц в базе: <strong>304,016,268(177,735,420 + 126,280,848) (просчитано 77% ok.ru и 100% vk.com)</strong></li>
+                                                <li><i class="bi bi-check-circle"></i> Время сбора: <strong>vk.com: с 08-2022 по 09-2022, ok.ru: с 09-2022 по 10-2022</strong></li>
+                                                <li><i class="bi bi-check-circle"></i> Процент успешных поисков: <strong>vk.com: 43.87%, ok.ru: 45.13%</strong></li>
+                                            </ul>
+                                            <a href="{{ url_for('search_vkok2022') }}" class="read-more align-self-start" onclick="checkRegistration(event, '{{ url_for('search_vkok2022') }}')"><span>Перейти</span><i class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="mb-2 mt-2">
+                            <div class="adfinity_block_4724"></div>
+                            <div class="adfinity_block_4720"></div>
+                        </div>
+                        <section id="onfocus" class="onfocus">
+                            <div class="container-fluid p-0" data-aos="fade-up">
+                                <div class="row g-0">
+                                    <div class="col-lg-12">
+                                        <div class="content d-flex flex-column justify-content-center h-100">
+                                            <h3>Аватарки <em>Тиктока</em></h3>
+                                            <p class="fst-italic">
+                                                Улучшенный алгоритм распознавания.
+                                            </p>
+                                            <ul>
+                                                <li><i class="bi bi-check-circle"></i> Всего лиц в базе: <strong>125,443,334 (просчитано 18.38% от всех)</strong></li>
+                                                <li><i class="bi bi-check-circle"></i> Время сбора: <strong>с 03-2021 по 09-2021</strong></li>
+                                                <li><i class="bi bi-check-circle"></i> Процент успешных поисков: <strong>10.52%</strong></li>
+                                            </ul>
+                                            <a href="{{ url_for('search_tiktok') }}" class="read-more align-self-start" onclick="checkRegistration(event, '{{ url_for('search_tiktok') }}')"><span>Перейти</span><i class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="onfocus" class="onfocus">
+                            <div class="container-fluid p-0" data-aos="fade-up">
+                                <div class="row g-0">
+                                    <div class="col-lg-12">
+                                        <div class="content d-flex flex-column justify-content-center h-100">
+                                            <h3>Аватарки <em>Клубхауса</em></h3>
+                                            <p class="fst-italic">
+                                                Улучшенный алгоритм распознавания.
+                                            </p>
+                                            <ul>
+                                                <li><i class="bi bi-check-circle"></i> Всего лиц в базе: <strong>13,071,041 (просчитано ~65% от всех)</strong></li>
+                                                <li><i class="bi bi-check-circle"></i> Время сбора: <strong>с 05-2021 по 01-2022</strong></li>
+                                                <li><i class="bi bi-check-circle"></i> Процент успешных поисков: <strong>8.94%</strong></li>
+                                            </ul>
+                                            <a href="{{ url_for('search_clubhouse') }}" class="read-more align-self-start" onclick="checkRegistration(event, '{{ url_for('search_clubhouse') }}')"><span>Перейти</span><i class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="onfocus" class="onfocus">
+                            <div class="container-fluid p-0" data-aos="fade-up">
+                                <div class="row g-0">
+                                    <div class="col-lg-12">
+                                        <div class="content d-flex flex-column justify-content-center h-100">
+                                            <h3>Аватарки <em>Вконтакте и Одноклассников</em> 2020</h3>
+                                            <p class="fst-italic">
+                                                Старый алгоритм распознавания. Много фотографий сейчас уже недоступных и отсутствующих в базе 2022.
+                                            </p>
+                                            <ul>
+                                                <li><i class="bi bi-check-circle"></i> Всего лиц в базе: <strong>280,781,743 (просчитано 67% ok.ru и 100% vk.com)</strong></li>
+                                                <li><i class="bi bi-check-circle"></i> Время сбора: <strong>vk.com: с 12-2018 по 06-2019, ok.ru: с 06-2019 по 03-2020</strong></li>
+                                                <li><i class="bi bi-check-circle"></i> Процент успешных поисков: <strong>vk.com: 37.90%, ok.ru: 40.19%</strong></li>
+                                            </ul>
+                                            <a href="{{ url_for('search_vkok') }}" class="read-more align-self-start" onclick="checkRegistration(event, '{{ url_for('search_vkok') }}')"><span>Перейти</span><i class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="onfocus" class="onfocus">
+                            <div class="container-fluid p-0" data-aos="fade-up">
+                                <div class="row g-0">
+                                    <div class="col-lg-12">
+                                        <div class="content d-flex flex-column justify-content-center h-100">
+                                            <h3>Публичные персоны</h3>
+                                            <p class="fst-italic">
+                                                Улучшенный алгоритм распознавания. Знаменитые актёры, музыканты, спортсмены, политики ...
+                                            </p>
+                                            <ul>
+                                                <li><i class="bi bi-check-circle"></i> Всего лиц в базе: <strong>55,741,249</strong></li>
+                                                <li><i class="bi bi-check-circle"></i> Время сбора: <strong> с 05-2022 по 08-2022</strong></li>
+                                                <li><i class="bi bi-check-circle"></i> Процент успешных поисков: <strong>12.46%</strong></li>
+                                            </ul>
+                                            <a href="{{ url_for('search_public') }}" class="read-more align-self-start" onclick="checkRegistration(event, '{{ url_for('search_public') }}')"><span>Перейти</span><i class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                        <img src="../static/img/FaceHunt-search.svg" alt class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include 'footer.html' %}
+    {% include 'modals.html' %}
+    {% include 'foot_includes.html' %}
+
+    <script>
+        function checkRegistration(event, url) {
+            event.preventDefault();
+            var isLoggedIn = {{ 'true' if logged_in_user else 'false' }};
+            if (isLoggedIn) {
+                window.location.href = url;
+            } else {
+                var loginModal = new bootstrap.Modal(document.getElementById('modalLoginForm'));
+                loginModal.show();
+            }
+        }
+    </script>
+</body>
+</html>
